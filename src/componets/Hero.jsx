@@ -1,9 +1,9 @@
 import Squares from "../../ReactBits/Squares";
-import React from "react";
+import React, { memo } from "react";
 import Achievments from "./Achievments";
 import Solutions from "./Solutions";
 
-const Hero = () => {
+const Hero = memo(() => {
   return (
     <>
       <div className="relative w-full h-1/2 overflow-hidden">
@@ -66,6 +66,6 @@ const Hero = () => {
       </div>
     </>
   );
-};
+});
 
 export default Hero;

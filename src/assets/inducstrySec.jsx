@@ -1,62 +1,94 @@
-export const slides = [
+import { image, title } from "framer-motion/client";
+
+export const DEFAULT_ITEMS = [
   {
-    title: "Streaming Platforms",
+    title: "Healthcare",
     items: [
-      "Streaming Platforms",
-      "OTT Apps",
-      "Content Management",
-      "AI-Based Viewing Recommendations",
+      "AI-Based Patient Monitoring",
+      "Fraud Detection",
+      "Remote Monitoring",
+      "Analytics",
     ],
-    img: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    image: "/images/healthcare.jpg",
+  },
+  {
+    title: "Finance",
+    items: [
+      "AI-Enabled Financial Planning",
+      "Digital Banking",
+      "Digital Wallets",
+      "Analytics",
+    ],
+    image: "/images/finance.jpg",
+  },
+  {
+    title: "Restaurant",
+    items: [
+      "AI-Based Menu Recommendations",
+      "Online Ordering",
+      "Loyalty Programs",
+      "Reservation Management",
+    ],
+    image: "/images/restaurant.jpg",
+  },
+  {
+    title: "eCommerce",
+    items: [
+      "Online Storefronts",
+      "Marketplace Integration",
+      "AI-Based Suggestions",
+      "Inventory Management",
+    ],
+    image: "/images/ecommerce.jpg",
+  },
+  {
+    title: "Travel",
+    items: [
+      "Booking Platforms",
+      "Itenerary Management",
+      "Loyalty Programs",
+      "AI Chatbots",
+    ],
+    image: "/images/travel.jpg",
+  },
+  {
+    title: "Entertainment",
+    items: [
+      "Streaming Services",
+      "Content Recommendations",
+      "User Analytics",
+      "Social Media Integration",
+    ],
+    image: "/images/entertainment.jpg",
   },
   {
     title: "On-Demand",
     items: [
-      "Service Marketplaces",
-      "Delivery Management",
-      "Payment Solutions",
-      "AI-Powered Delivery Routing",
+      "Ride-Hailing",
+      "Food Delivery",
+      "Service Booking",
+      "Real-Time Tracking",
     ],
-    img: "https://img.daisyui.com/images/stock/photo-1598970434795-0c54fe7c0640.webp",
-  },
-  {
-    title: "On-Demand",
-    items: [
-      "Service Marketplaces",
-      "Delivery Management",
-      "Payment Solutions",
-      "AI-Powered Delivery Routing",
-    ],
-    img: "https://img.daisyui.com/images/stock/photo-1598970434795-0c54fe7c0640.webp",
-  },
-  {
-    title: "On-Demand",
-    items: [
-      "Service Marketplaces",
-      "Delivery Management",
-      "Payment Solutions",
-      "AI-Powered Delivery Routing",
-    ],
-    img: "https://img.daisyui.com/images/stock/photo-1598970434795-0c54fe7c0640.webp",
+    image: "/images/ondemand.jpg",
   },
   {
     title: "Social Media",
     items: [
-      "Community Platforms",
-      "Content Sharing",
-      "Messaging Solutions",
-      "AI-Enhanced Ad Targeting",
+      "User Engagement",
+      "Content Moderation",
+      "Analytics",
+      "Ad Targeting",
     ],
-    img: "https://img.daisyui.com/images/stock/photo-1603744509813-50a1b100544e.webp",
+    image: "/images/education.jpg",
   },
   {
     title: "Logistics",
     items: [
+      "Supply Chain Management",
+      "Real-Time Tracking",
       "Route Optimization",
-      "Fleet Management",
-      "AI-Powered Dispatch",
-      "Tracking Solutions",
+      "Inventory Management",
     ],
-    img: "https://img.daisyui.com/images/stock/photo-1581091870621-7f4a1b5300d8.webp",
+    image: "/images/realestate.jpg",
   },
 ];

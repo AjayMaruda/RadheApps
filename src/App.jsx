@@ -9,9 +9,10 @@ import Info from "./componets/Info";
 import ContactUs from "./componets/ContactUs";
 import Footer from "./componets/Footer";
 
+
 function App() {
   return (
-      <>   
+      <>  
       <Header />
       <Hero />
       <Achievments />
@@ -26,5 +27,6 @@ function App() {
       
   );
 }
+
 
 export default App;

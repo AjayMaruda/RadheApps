@@ -1,5 +1,6 @@
 import React from "react";
-import { services } from "../assets/servicesSec";
+// import { services } from "../assets/servicesSec";
+import ServiceVertical from "./ServiceVertical";
 
 const Servecies = () => {
   return (
@@ -14,10 +15,10 @@ const Servecies = () => {
         </div>
 
         <h2 className="text-xl sm:text-4xl md:text-5xl font-bold leading-tight text-black max-w-3xl">
-          <span className="text-gray-400">
-            We Create New Solutions and Transform Existing Ones{" "}
+          <span className="text-gray-500">
+            We Create New Solutions and Transform Existing{" "}
           </span>
-          with New Gen Technologies To Make Your Business Future‑proof
+          One with New Gen Technologies To Make Your Business Future‑proof
         </h2>
 
         {/* Image with overlay text */}
@@ -27,19 +28,14 @@ const Servecies = () => {
         </div>
 
         {/* Consultation button */}
-        <button className="self-start bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-md transition">
+        <button className="self-start bg-green-500 hover:shadow-lg  text-white font-semibold px-6 py-3 rounded-md transition">
           Book 30 Min C‑Level Consultation →
         </button>
       </div>
 
       {/* RIGHT COLUMN */}
       <div className="space-y-8">
-        {services.map((svc) => (
-          <div key={svc.title} className="flex flex-col">
-            <h3 className="text-xl font-semibold">{svc.title}</h3>
-            <p className="text-gray-600 mt-1">{svc.description}</p>
-          </div>
-        ))}
+        <ServiceVertical/>
       </div>
     </section>
   );

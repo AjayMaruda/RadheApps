@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 
-const ContactUs = () => {
+const ContactUs = memo(() => {
     return (
         <div className="bg-white-900 text-black-100 flex justify-center items-center min-h-screen p-4">
             <div className="max-w-4xl w-full bg-white rounded-xl shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
@@ -43,7 +43,7 @@ const ContactUs = () => {
                                 id="firstName"
                                 name="firstName"
                                 required
-                                className="mt-1 block w-full py-2 px-3 border border-gray-600 bg-gray-800 text-black rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                                className="mt-1 block w-full py-2 px-3 border border-gray-600 bg-white-800 text-black rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
                             />
                         </div>
                         <div>
@@ -55,7 +55,7 @@ const ContactUs = () => {
                                 id="lastName"
                                 name="lastName"
                                 required
-                                className="mt-1 block w-full py-2 px-3 border border-gray-600 bg-gray-800 text-black rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                                className="mt-1 block w-full py-2 px-3 border border-gray-600 bg-white-800 text-black rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
                             />
                         </div>
                         <div>
@@ -67,7 +67,7 @@ const ContactUs = () => {
                                 id="email"
                                 name="email"
                                 required
-                                className="mt-1 block w-full py-2 px-3 border border-gray-600 bg-gray-800 text-black rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                                className="mt-1 block w-full py-2 px-3 border border-gray-600 bg-white-800 text-black rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
                             />
                         </div>
                         <div>
@@ -78,7 +78,7 @@ const ContactUs = () => {
                                 type="text"
                                 id="phone"
                                 name="phone"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-600 bg-gray-800 text-black rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                                className="mt-1 block w-full py-2 px-3 border border-gray-600 bg-white-800 text-black rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
                             />
                         </div>
                         <div>
@@ -89,12 +89,12 @@ const ContactUs = () => {
                                 id="message"
                                 name="message"
                                 rows={4}
-                                className="mt-1 block w-full py-2 px-3 border border-gray-600 bg-gray-800 text-black rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                                className="mt-1 block w-full py-2 px-3 border border-gray-600 bg-white-800 text-black rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
                             />
                         </div>
                         <button
                             type="submit"
-                            className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 flex items-center gap-2"
+                            className="bg-green-500 hover:shadow-lg text-white font-semibold py-3 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 flex items-center gap-2"
 
                         >
                             Let's Connect
@@ -109,6 +109,6 @@ const ContactUs = () => {
             </div>
         </div>
     );
-}
+});
 
 export default ContactUs
