@@ -1,32 +1,39 @@
-import React from 'react'
+import React, { memo } from 'react';
 
-const Footer = () => {
+const FooterSection = ({ title, links }) => (
+  <nav>
+    <h6 className="footer-title">{title}</h6>
+    {links.map((link, index) => (
+      <a key={index} className="link link-hover" href={`/${link.toLowerCase().replace(/\s+/g, '-')}`}>
+        {link}
+      </a>
+    ))}
+  </nav>
+);
+
+const Footer = memo(() => {
+  const sections = [
+    {
+      title: 'Services',
+      links: ['Branding', 'Design', 'Marketing', 'Advertisement']
+    },
+    {
+      title: 'Company',
+      links: ['About us', 'Contact', 'Jobs', 'Press kit']
+    },
+    {
+      title: 'Legal',
+      links: ['Terms of use', 'Privacy policy', 'Cookie policy']
+    }
+  ];
+
   return (
-    <div>
-      <footer className="footer flex justify-evenly bg-neutral text-neutral-content p-10">
-  <nav>
-    <h6 className="footer-title">Services</h6>
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Company</h6>
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Legal</h6>
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
-  </nav>
-</footer>
-    </div>
-  )
-}
+    <footer className="footer flex justify-evenly bg-neutral text-neutral-content p-10">
+      {sections.map((section, index) => (
+        <FooterSection key={index} title={section.title} links={section.links} />
+      ))}
+    </footer>
+  );
+});
 
-export default Footer
+export default Footer;

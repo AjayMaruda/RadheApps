@@ -1,5 +1,4 @@
-import { image, title } from "framer-motion/client";
-
+// Optimized inducstrySec.jsx
 export const DEFAULT_ITEMS = [
   {
     title: "Healthcare",

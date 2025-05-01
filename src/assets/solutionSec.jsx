@@ -1,3 +1,4 @@
+// Optimized solutionSec.jsx
 export const solutionSec = [
   {
     id: "startup",
@@ -53,10 +54,10 @@ export const solutionSec = [
     ],
     solutions: [
       { id: "app1", title: "Flutter", subtitle: "Hybrid Development" },
-      { id: "app2", title: "React Native", subtitle: "Fast Performance"},
-      { id: "app2", title: "React Native", subtitle: "Fast Performance"},
-      { id: "app2", title: "React Native", subtitle: "Fast Performance"},
-      { id: "app2", title: "React Native", subtitle: "Fast Performance"}
+      { id: "app2", title: "React Native", subtitle: "Fast Performance" },
+      { id: "app3", title: "PWA", subtitle: "Cross-Platform" },
+      { id: "app4", title: "Swift", subtitle: "iOS Development" },
+      { id: "app5", title: "Kotlin", subtitle: "Android Development" }
     ]
   },
   {
@@ -74,9 +75,9 @@ export const solutionSec = [
     solutions: [
       { id: "ai1", title: "Vision", subtitle: "Image recognition" },
       { id: "ai2", title: "NLP", subtitle: "Language Processing" },
-      { id: "ai2", title: "NLP", subtitle: "Language Processing" },
-      { id: "ai2", title: "NLP", subtitle: "Language Processing" },
-      { id: "ai2", title: "NLP", subtitle: "Language Processing" }
+      { id: "ai3", title: "Prediction", subtitle: "Forecasting" },
+      { id: "ai4", title: "Automation", subtitle: "Process Optimization" },
+      { id: "ai5", title: "Analytics", subtitle: "Data Intelligence" }
     ]
   },
   {

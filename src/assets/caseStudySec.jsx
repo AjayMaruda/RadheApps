@@ -1,3 +1,4 @@
+// Optimized caseStudySec.jsx
 export const cardData = [
   { title: "AI Solutions", subtitle: "for Health & Fitness" },
   { title: "Wallet", subtitle: "for Fintech" },
@@ -10,22 +11,19 @@ export const cardData = [
 export const caseContents = [
   {
     title: "Smart Fit",
-    description:
-      "Personalized nutrition and workout recommendations, backed by advanced AI algorithms, machine learning, and predictive analytics.",
+    description: "Personalized nutrition and workout recommendations, backed by advanced AI algorithms, machine learning, and predictive analytics.",
     stats: ["80% User Retention Rate", "20K+ Meal Plans Generated"],
     button: "Download Case Study",
   },
   {
     title: "FinWallet",
-    description:
-      "Secure digital wallet platform providing real-time analytics and fraud detection with AI capabilities.",
+    description: "Secure digital wallet platform providing real-time analytics and fraud detection with AI capabilities.",
     stats: ["95% Transaction Success", "50K+ Active Users"],
     button: "Explore Wallet",
   },
   {
     title: "MetaSpace",
-    description:
-      "Virtual real estate platform using AI to forecast property trends and virtual space utilization.",
+    description: "Virtual real estate platform using AI to forecast property trends and virtual space utilization.",
     stats: ["3X ROI Growth", "1M+ Virtual Land Parcels"],
     button: "View MetaSpace",
   },
@@ -43,8 +41,7 @@ export const caseContents = [
   },
   {
     title: "Custom App",
-    description:
-      "A custom app solution that integrates seamlessly with existing systems, enhancing user experience and operational efficiency.",
+    description: "A custom app solution that integrates seamlessly with existing systems, enhancing user experience and operational efficiency.",
     stats: ["Stat 1", "Stat 2"],
     button: "Explore Custom App",
   }
